@@ -1,7 +1,15 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<span id="view"></span>
 <script type="text/javascript">
     if (screen.width <= 699) {
-        document.location = "mobile.html";
+        // document.location = "mobile.html";
+        $("#view").load("mobile.html", function () {
+            console.log("Loading Mobile View.");
+        });
     } else {
-        document.location = "desktop.html";
+
+        $("#view").load("desktop.html", function () {
+            console.log("Loading Mobile View.");
+        });
     }
 </script>
