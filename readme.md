@@ -5,4 +5,4 @@ npm install -g sass
 sass --no-source-map --watch scss/style.scss css/style.css
 
 # Prototype
-![alt text](https://github.com/bavaleakash/ui-components/blob/main/1.SignUp/prototype.JPG?raw=true)
+![alt text](https://github.com/bavaleakash/bavaleakash.github.io/blob/main/initial-prototype.JPG?raw=true)
