@@ -1,16 +1,433 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" sizes="192x192" href="./assets/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./assets/css/style.css" rel="stylesheet">
     <title>Akash Bavale's Portfolio</title>
-    <base href="/">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="https://bavaleakash.github.io/favicon.ico">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <span></span>
-    <script type="text/javascript" src="index.js"></script>
+    <header class="header">
+        <div class="heading">
+            <a href="#" target="_self" class="header-link"> Akash Bavale's Portfolio</a>
+        </div>
+        <nav class="nav-links" aria-label>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#clients">Clients</a>
+            <a href="#hobbies">Hobbies</a>
+        </nav>
+    </header>
+
+    <!-- PROFILE CARD -->
+    <section class="profile" id="profile">
+        <img src="./assets/img/background.webp" class="background" alt="background image">
+        <div class="profile-card">
+            <img class="profile-picture" src="./assets/img/profile.jpeg" alt="profile picture">
+            <section class="profile-details">
+                <div class="profile-card-heading">
+                    <div class="name">Akash Bavale</div>
+                    <div class="profile-summary">Programmer, Artist and Photo Enthusiast</div>
+                </div>
+                <div class="profile-detail">
+                    <label for="phone-number">Phone:</label>
+                    <a id="email" href="tel:+91 9028385958">+91 9028385958</a>
+                </div>
+                <div class="profile-detail">
+                    <label for="email">Email:</label>
+                    <a id="email" href="mailto:bavaleakash@gmail.com">bavaleakash@gmail.com</a>
+                </div>
+                <div class="profile-detail">
+                    <label for="address">Residing in:</label>
+                    <a id="address" href="https://goo.gl/maps/mRica9gTwUreNXpXA" target="_blank">
+                        Pune, Mahrashtra, India</a>
+                </div>
+                <div class="profile-detail">
+                    <label for="skype">Skype:</label>
+                    <a id="skype" href="skype:bavaleakash?chat">bavaleakash</a>
+                </div>
+                <a href="https://836a9f59-0a63-4baa-b8e4-728f194d5da2.filesusr.com/ugd/f72746_5575c96244c842fdaf39bc08f6d3272f.pdf"
+                    target="_blank" class="btn">Download
+                    Resume</a>
+            </section>
+            <nav class="social-links" aria-label>
+                <a href="https://www.linkedin.com/in/bavaleakash/" target="_blank">
+                    <img src="./assets/img/social-links/linkedin.png" alt="linkedin">
+                </a>
+                <a href="https://github.com/bavaleakash" target="_blank">
+                    <img src="./assets/img/social-links/github.png" alt="github">
+                </a>
+                <a href="https://medium.com/@bavaleakash" target="_blank">
+                    <img src="./assets/img/social-links/medium.jpg" alt="medium">
+                </a>
+                <a href="https://www.npmjs.com/~bavaleakash" target="_blank">
+                    <img src="./assets/img/social-links/npm.jpg" alt="npm">
+                </a>
+                <a href="https://www.instagram.com/bavaleakash/" target="_blank">
+                    <img src="./assets/img/social-links/instagram.png" alt="instagram">
+                </a>
+                <a href="https://www.facebook.com/bavaleakash/" target="_blank">
+                    <img src="./assets/img/social-links/facebook.png" alt="facebook">
+                </a>
+                <a href="https://www.imdb.com/user/ur53791017/lists" target="_blank">
+                    <img src="./assets/img/social-links/imdb.png" alt="imdb">
+                </a>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="about-heading">Hello! I'm Akash</div>
+        <div class="about-description">A result-oriented professional with <em>8+ years</em> of experience in Software
+            Development which includes working on technologies such as <em>Angular, JavaScript, HTML, and CSS</em>
+            following
+            Agile Methodology. Looking to grow stronger technically and build a stable career in a healthy environment
+            which not only provides me opportunities to work, utilize my competencies to the best, but also helps me
+            explore myself and give my best to the organization.
+        </div>
+    </section>
+
+    <!-- SKILLS-->
+    <section class="partition-heading" id="skills">
+        Skills
+    </section>
+
+    <section class="skills">
+        <div class="item">
+            <div class="skill">Angular</div>
+            <div class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-o"></span>
+            </div>
+        </div>
+        <div class="item">
+            <div class="skill">Jasmine / Karma / Jest</div>
+            <div class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-o"></span>
+            </div>
+        </div>
+        <div class="item">
+            <div class="skill">HTML5 / CSS3</div>
+            <div class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-o"></span>
+            </div>
+        </div>
+        <div class="item">
+            <div class="skill">Node.js / NestJS / GraphQL</div>
+            <div class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-o"></span>
+                <span class="fa fa-star-o"></span>
+            </div>
+        </div>
+        <div class="item">
+            <div class="skill">Azure / Docker</div>
+            <div class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-half-o"></span>
+                <span class="fa fa-star-o"></span>
+                <span class="fa fa-star-o"></span>
+            </div>
+        </div>
+        <div class="item">
+            <div class="skill">ReactJs / Java</div>
+            <div class="rating">
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star-o"></span>
+                <span class="fa fa-star-o"></span>
+                <span class="fa fa-star-o"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE-->
+    <section class="partition-heading" id="experience">
+        Experience
+    </section>
+
+    <section class="experience">
+        <div class="item">
+            <div class="tenure">
+                <div class="period">August 2021 - Present</div>
+                <div class="role">Associate Consultant</div>
+            </div>
+            <div class="timeline-experience">
+                <div class="dot"></div>
+                <div class="dash"></div>
+            </div>
+            <div class="organization">
+                <div class="name">GlobalLogic, Hitachi</div>
+                <div class="years">1+ Years</div>
+                <ul class="responsibilities">
+                    <li>Senior Front-end developer with technologies such as Angular, JavaScript, and TypeScript.</li>
+                    <li>Handled all aspects of development such as coding, testing, and documentation.</li>
+                    <li>Involved in the entire product development life cycle from requirements gathering to deployment.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="tenure">
+                <div class="period">August 2019 - August 2021</div>
+                <div class="role">Senior Software Engineer</div>
+            </div>
+            <div class="timeline-experience">
+                <div class="dot"></div>
+                <div class="dash"></div>
+            </div>
+            <div class="organization">
+                <div class="name">Harman Connected Services</div>
+                <div class="years">2+ Years</div>
+                <ul class="responsibilities">
+                    <li>Full-stack developer with technologies such as Angular, NodeJs, NestJs, GraphQL, and
+                        Firestore/Firebase.</li>
+                    <li>Projects dealt with the ESP, Vx, and rod pump meters.</li>
+                    <li> Improved software development time by 50% by coaching 4 junior developers to adopt agile
+                        development techniques.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="tenure">
+                <div class="period">May 2018 - August 2019</div>
+                <div class="role">Software Engineer</div>
+            </div>
+            <div class="timeline-experience">
+                <div class="dot"></div>
+                <div class="dash"></div>
+            </div>
+            <div class="organization">
+                <div class="name">SmarTek21</div>
+                <div class="years">1+ Years</div>
+                <ul class="responsibilities">
+                    <li>Full-stack developer with technologies such as Angular, Java, and Postgres.</li>
+                    <li>Created a project to maintain the hierarchy of managers and employees inside the organization.
+                    </li>
+                    <li> Wrote efficient and easily maintainable code.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="tenure">
+                <div class="period">May 2015 - May 2018</div>
+                <div class="role">System Engineer</div>
+            </div>
+            <div class="timeline-experience">
+                <div class="dot"></div>
+                <div class="dash"></div>
+            </div>
+            <div class="organization">
+                <div class="name">Nihilent Technologies</div>
+                <div class="years">3 Years</div>
+                <ul class="responsibilities">
+                    <li>Full-stack developer with technologies such as Angular JS, Angular, Java, Spring, Hibernate,
+                        Spring boot, Kibana, and Logstash.</li>
+                    <li>Developed and Maintained multiple projects related to Mobile Banking and Currency.
+                    </li>
+                    <li>Migrated project from AngularJS to Angular 4.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="tenure">
+                <div class="period">June 2013 - March 2014</div>
+                <div class="role">Technical Support Associate</div>
+            </div>
+            <div class="timeline-experience">
+                <div class="dot"></div>
+                <div class="dash"></div>
+            </div>
+            <div class="organization">
+                <div class="name">Mphasis</div>
+                <div class="years">9 Months</div>
+                <ul class="responsibilities">
+                    <li>Troubleshooting client applications and machines.</li>
+                    <li>Manage mainframe and ticketing tools.
+                    </li>
+                    <li> On-call communication with clients for a better understanding of the problems.</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- EDUCATION-->
+    <section class="partition-heading" id="education">
+        Education
+    </section>
+
+    <section class="education">
+        <div class="item">
+            <div class="tenure">
+                <div class="year">2015</div>
+                <div class="stream">Diploma in Advanced Computing</div>
+                <div class="cgpa">73.75%</div>
+            </div>
+            <div class="timeline-education">
+                <div class="dot"></div>
+                <div class="dash"></div>
+            </div>
+            <div class="organization">
+                <div class="name">IACSD, D.Y. Patil, Pune</div>
+                <div class="description">Post Graduation Diploma in Centre for Development of Advanced Computing.</div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="tenure">
+                <div class="year">2013</div>
+                <div class="stream">Bachelor Of Engineering</div>
+                <div class="cgpa">63.33%</div>
+            </div>
+            <div class="timeline-education">
+                <div class="dot"></div>
+                <div class="dash"></div>
+            </div>
+            <div class="organization">
+                <div class="name">MIT-Academy Of Engineering, Pune</div>
+                <div class="description">B.E in the stream of Electronics from Pune University.</div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="tenure">
+                <div class="year">2009</div>
+                <div class="stream">HSC</div>
+                <div class="cgpa">62%</div>
+            </div>
+            <div class="timeline-education">
+                <div class="dot"></div>
+                <div class="dash"></div>
+            </div>
+            <div class="organization">
+                <div class="name">S.N.B.P, Pimpri, Pune</div>
+                <div class="description">12th Standard in the stream of Science from Maharashtra Board.</div>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="tenure">
+                <div class="year">2007</div>
+                <div class="stream">SSC</div>
+                <div class="cgpa">68%</div>
+            </div>
+            <div class="timeline-education">
+                <div class="dot"></div>
+                <div class="dash"></div>
+            </div>
+            <div class="organization">
+                <div class="name">Tata Motors Vidya Niketan, Pune</div>
+                <div class="description">10th Standard from Maharashtra Board.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CLIENTS-->
+    <section class="partition-heading" id="clients">
+        Clients
+    </section>
+
+    <section class="clients">
+        <div>
+            <img class="invert" src="./assets/img/clients/hp.png" alt="hp">
+            <img class="invert" src="./assets/img/clients/sabre.jpg" alt="sabre">
+            <img src="./assets/img/clients/fundamo.png" alt="fundamo">
+            <img src="./assets/img/clients/mfsa.jpg" alt="mfsa">
+            <img class="invert" src="./assets/img/clients/tmobile.jpg" alt="tmobile">
+            <img class="invert" src="./assets/img/clients/slb.png" alt="slb">
+            <img src="./assets/img/clients/agora.png" alt="agora">
+        </div>
+        <div>
+            <img src="./assets/img/clients/mars.png" alt="mars">
+            <img src="./assets/img/clients/drake.png" alt="drake">
+            <img src="./assets/img/clients/hitachi.png" alt="hitachi">
+        </div>
+    </section>
+
+    <!-- HOBBIES & INTERESTS-->
+    <section class="partition-heading" id="hobbies">
+        Hobbies & Interests
+    </section>
+
+    <section class="hobbies">
+        <div class="item">
+            <div class="heading">A SCIENCE FREAK WHO GEEKS</div>
+            <div class="description">I worship Albert Einstein and I love Science stuff. Ask me a thing or two and I
+                won't disappoint you.</div>
+        </div>
+        <div class="item">
+            <div class="heading">A MOVIE/ANIME BUFF</div>
+            <div class="description">I love watching movies, series and anime. Though I am always busy, I do make time
+                to watch movies.</div>
+        </div>
+        <div class="item">
+            <div class="heading">I LOVE COOKING :P</div>
+            <div class="description">I have been taunted by people that I cannot even make tea in the past. Now I can
+                cook and eat it in front their faces :D</div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <a href="#profile" class="author">© Designed and developed by Akash Bavale.</a>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/bavaleakash/" target="_blank">
+                <img class="invert" src="./assets/img/social-links/linkedin.png" alt="linkedin">
+            </a>
+            <a href="https://github.com/bavaleakash" target="_blank">
+                <img class="invert" src="./assets/img/social-links/github.png" alt="github">
+            </a>
+            <a href="https://medium.com/@bavaleakash" target="_blank">
+                <img src="./assets/img/social-links/medium.jpg" alt="medium">
+            </a>
+            <a href="https://www.npmjs.com/~bavaleakash" target="_blank">
+                <img src="./assets/img/social-links/npm.jpg" alt="npm">
+            </a>
+            <a href="https://www.instagram.com/bavaleakash/" target="_blank">
+                <img class="invert" src="./assets/img/social-links/instagram.png" alt="instagram">
+            </a>
+            <a href="https://www.facebook.com/bavaleakash/" target="_blank">
+                <img class="invert" src="./assets/img/social-links/facebook.png" alt="facebook">
+            </a>
+            <a href="https://www.imdb.com/user/ur53791017/lists" target="_blank">
+                <img src="./assets/img/social-links/imdb.png" alt="imdb">
+            </a>
+
+            <a href="https://wa.me/+919028385958" target="_blank">
+                <img class="size" src="./assets/img/social-links/whatsapp.jpg" alt="whatsapp">
+            </a>
+        </div>
+    </footer>
 </body>
+
+</html>

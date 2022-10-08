@@ -1,0 +1,21 @@
+@import './variables';
+
+@mixin timeline-mixin($height) {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+
+    .dot {
+        border-radius: 50%;
+        border: 7px solid rgba($color: $shade, $alpha: .7);
+        padding: 3px;
+    }
+
+    .dash {
+        height: $height;
+        width: 3px;
+        background-color: rgba($color: $shade, $alpha: .6);
+        ;
+    }
+}

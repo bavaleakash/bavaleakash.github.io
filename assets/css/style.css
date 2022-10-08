@@ -1,0 +1,353 @@
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 65.2%;
+}
+
+body {
+  background-color: #F4F5F4;
+  font-family: "Poppins", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #F4F5F4;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 2rem;
+  background-color: #F4F5F4;
+  box-shadow: 0 0 10rem rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header a:link,
+.header a:visited {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: #323232;
+  font-weight: 500;
+}
+.header .nav-links {
+  display: flex;
+  gap: 2rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.header .nav-links a:link,
+.header .nav-links a:visited {
+  font-size: 2rem;
+}
+
+.profile {
+  position: relative;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.profile .background {
+  height: 60rem;
+  background-size: cover;
+  filter: blur(2px);
+}
+.profile .profile-card {
+  position: absolute;
+  backdrop-filter: blur(5px);
+  top: 8rem;
+  align-self: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+  box-shadow: 0 0 5rem rgba(255, 255, 255, 0.608);
+  color: #F4F5F4;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 44rem 39rem;
+  grid-template-rows: 52rem 8rem;
+}
+.profile .profile-card .profile-picture {
+  max-width: 101%;
+  margin-top: -7.2rem;
+  filter: grayscale(100%) saturate(50%);
+}
+.profile .profile-card .profile-details {
+  padding: 5rem;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.profile .profile-card .profile-details .name {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.profile .profile-card .profile-details .profile-summary {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.profile .profile-card .profile-details .profile-detail label {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.profile .profile-card .profile-details .profile-detail a {
+  font-size: 1.5rem;
+}
+.profile .profile-card .profile-details .profile-detail a:link, .profile .profile-card .profile-details .profile-detail a:visited {
+  color: #F4F5F4;
+  text-decoration: none;
+}
+.profile .profile-card .profile-details .btn {
+  align-self: center;
+  font-size: 2rem;
+  padding: 1rem;
+  margin-bottom: -4rem;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+.profile .profile-card .profile-details .btn:link, .profile .profile-card .profile-details .btn:visited {
+  background-color: #F4F5F4;
+  color: #323232;
+  border: 1px solid #323232;
+}
+.profile .profile-card .profile-details .btn:hover, .profile .profile-card .profile-details .btn:active {
+  background-color: #323232;
+  color: #F4F5F4;
+  border: 1px solid #F4F5F4;
+}
+.profile .profile-card .social-links {
+  background-color: rgba(0, 0, 0, 0.5);
+  grid-column: 1/-1;
+  box-shadow: 0 0 5rem rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 15rem;
+}
+.profile .profile-card .social-links img {
+  max-width: 3rem;
+}
+
+.about {
+  font-size: 3rem;
+  padding: 12rem;
+  text-align: center;
+  background-color: #F4F5F4;
+  color: #323232;
+  line-height: 1.5;
+}
+.about .about-heading {
+  font-size: 4.5rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+.about .about-description {
+  font-size: 2.5rem;
+}
+
+.skills {
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  color: #323232;
+  margin: 5rem 15% 5rem 20%;
+  gap: 2rem;
+}
+.skills .item {
+  display: flex;
+  gap: 1rem;
+}
+.skills .item .skill {
+  justify-self: end;
+  flex-basis: 30rem;
+  font-weight: 600;
+}
+.skills .item .rating {
+  justify-self: start;
+  flex-basis: 20rem;
+  color: #F4F5F4;
+}
+.skills .item .rating .fa {
+  color: #323232;
+}
+
+.partition-heading {
+  color: #F4F5F4;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 2rem;
+  background-color: #323232;
+  letter-spacing: 10px;
+}
+
+.timeline-experience {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+.timeline-experience .dot {
+  border-radius: 50%;
+  border: 7px solid rgba(50, 50, 50, 0.7);
+  padding: 3px;
+}
+.timeline-experience .dash {
+  height: 20rem;
+  width: 3px;
+  background-color: rgba(50, 50, 50, 0.6);
+}
+
+.timeline-education {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+.timeline-education .dot {
+  border-radius: 50%;
+  border: 7px solid rgba(50, 50, 50, 0.7);
+  padding: 3px;
+}
+.timeline-education .dash {
+  height: 8rem;
+  width: 3px;
+  background-color: rgba(50, 50, 50, 0.6);
+}
+
+.experience,
+.education {
+  margin: 5rem 10%;
+  font-size: 2rem;
+  color: #323232;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 1rem;
+  line-height: 1.2;
+}
+.experience .item,
+.education .item {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+.experience .item .tenure,
+.education .item .tenure {
+  flex: 1 0 35rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-end;
+}
+.experience .item .tenure .year,
+.education .item .tenure .year {
+  font-weight: 600;
+}
+.experience .item .organization,
+.education .item .organization {
+  flex: 0 1 70rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-weight: 300;
+}
+.experience .item .organization .name,
+.education .item .organization .name {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.experience .item .organization .responsibilities li,
+.education .item .organization .responsibilities li {
+  margin-left: 2rem;
+}
+
+.clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+}
+.clients img {
+  max-height: 6rem;
+  margin: 2rem;
+  filter: grayscale(1) saturate(2);
+}
+.clients .invert {
+  filter: grayscale(1) saturate(1) invert(1) contrast(2);
+}
+
+.hobbies {
+  display: flex;
+  justify-content: center;
+  color: #323232;
+  padding: 8rem 20rem;
+  gap: 11rem;
+}
+.hobbies .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hobbies .item .heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.hobbies .item .description {
+  justify-self: center;
+  font-size: 2rem;
+}
+
+.footer {
+  width: 100%;
+  padding: 2rem 20rem;
+  background-color: #F4F5F4;
+  color: #323232;
+  box-shadow: 0 0 10rem rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .author:link,
+.footer .author:visited {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #323232;
+  font-weight: 500;
+}
+.footer .links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.footer .links img {
+  max-width: 3rem;
+}
+.footer .links .invert {
+  filter: grayscale(1) saturate(1) invert(1) contrast(2);
+}
+.footer .links .size {
+  max-width: 4rem;
+}
