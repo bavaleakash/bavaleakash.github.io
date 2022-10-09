@@ -4,21 +4,21 @@
     }
 }
 
-@media screen and (max-width: 1610px) {
+@media screen and (max-width: 1000px) {
     html {
         font-size: 45.5%;
     }
 }
 
-@media screen and (max-width: 1610px) {
-    // html {
-    //     // font-size: 60.5%;
-    // }
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 45.5%;
+    }
 
-    // .experience,
-    // .education {
-    //     // margin: 5rem 2rem;
-    // }
+    .experience,
+    .education {
+        margin: 5rem 2rem;
+    }
 
     .hobbies {
         padding: 8rem 5rem;
@@ -30,9 +30,9 @@
     }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 376px) {
     html {
-        font-size: 26%;
+        font-size: 20%;
     }
 
     .profile {
@@ -65,15 +65,6 @@
 
     .clients {
         font-size: 1rem;
-    }
-
-    .hobbies {
-        padding: 8rem 5rem;
-        justify-content: start;
-
-        .heading {
-            flex-basis: 7rem;
-        }
     }
 
     .footer {
