@@ -236,48 +236,54 @@ body {
 
 .experience,
 .education {
-  margin: 5rem 10%;
+  display: flex;
+  justify-content: center;
+}
+.experience .items,
+.education .items {
+  margin: 5rem 0;
   font-size: 2rem;
   color: #323232;
+  flex: 0 0 145rem;
   display: flex;
   flex-direction: column;
   position: relative;
   gap: 1rem;
   line-height: 1.2;
 }
-.experience .item,
-.education .item {
+.experience .items .item,
+.education .items .item {
   display: flex;
   justify-content: center;
   gap: 4rem;
 }
-.experience .item .tenure,
-.education .item .tenure {
-  flex: 1 0 35rem;
+.experience .items .item .tenure,
+.education .items .item .tenure {
+  flex: 1 0 0rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: flex-end;
 }
-.experience .item .tenure .year,
-.education .item .tenure .year {
+.experience .items .item .tenure .year,
+.education .items .item .tenure .year {
   font-weight: 600;
 }
-.experience .item .organization,
-.education .item .organization {
+.experience .items .item .organization,
+.education .items .item .organization {
   flex: 0 1 70rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
   font-weight: 300;
 }
-.experience .item .organization .name,
-.education .item .organization .name {
+.experience .items .item .organization .name,
+.education .items .item .organization .name {
   font-size: 2.5rem;
   font-weight: 600;
 }
-.experience .item .organization .responsibilities li,
-.education .item .organization .responsibilities li {
+.experience .items .item .organization .responsibilities li,
+.education .items .item .organization .responsibilities li {
   margin-left: 2rem;
 }
 
