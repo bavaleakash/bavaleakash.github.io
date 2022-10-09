@@ -1,0 +1,73 @@
+@media screen and (max-width: 1235px) {
+    html {
+        font-size: 50.5%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    html {
+        font-size: 45.5%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 45.5%;
+    }
+
+    .experience,
+    .education {
+        margin: 5rem 2rem;
+    }
+
+    .hobbies {
+        padding: 8rem 5rem;
+        justify-content: start;
+
+        .heading {
+            flex-basis: 7rem;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 25%;
+    }
+
+    .profile {
+        .profile-card {
+            margin: 0;
+            font-size: 0.5rem;
+        }
+    }
+
+    .about {
+        font-size: 1rem;
+        padding: 10rem 5rem;
+    }
+
+    .skills {
+
+        margin: 5rem;
+    }
+
+    .header {
+        .nav-links {
+            display: none;
+        }
+    }
+
+    .experience,
+    .education {
+        margin: 2rem;
+    }
+
+    .clients {
+        font-size: 1rem;
+    }
+
+    .footer {
+        padding: 2rem;
+    }
+}
