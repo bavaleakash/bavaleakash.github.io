@@ -357,6 +357,19 @@ body {
   max-width: 4rem;
 }
 
+@media screen and (max-width: 1300px) {
+  html {
+    font-size: 15%;
+  }
+  .experience .items,
+.education .items {
+    flex: 0 0 50rem;
+  }
+  .experience .items .item .organization,
+.education .items .item .organization {
+    flex: 0 1 30rem;
+  }
+}
 @media screen and (max-width: 1235px) {
   html {
     font-size: 50.5%;
@@ -383,32 +396,8 @@ body {
     flex-basis: 7rem;
   }
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 1300px) {
   html {
     font-size: 20%;
-  }
-  .profile .profile-card {
-    margin: 0;
-    font-size: 0.5rem;
-  }
-  .about {
-    font-size: 1rem;
-    padding: 10rem 5rem;
-  }
-  .skills {
-    margin: 5rem;
-  }
-  .header .nav-links {
-    display: none;
-  }
-  .experience,
-.education {
-    margin: 2rem;
-  }
-  .clients {
-    font-size: 1rem;
-  }
-  .footer {
-    padding: 2rem;
   }
 }
