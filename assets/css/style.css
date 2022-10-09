@@ -356,19 +356,12 @@ body {
     font-size: 50.5%;
   }
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1610px) {
   html {
     font-size: 45.5%;
   }
 }
-@media screen and (max-width: 700px) {
-  html {
-    font-size: 45.5%;
-  }
-  .experience,
-.education {
-    margin: 5rem 2rem;
-  }
+@media screen and (max-width: 1610px) {
   .hobbies {
     padding: 8rem 5rem;
     justify-content: start;
@@ -377,9 +370,9 @@ body {
     flex-basis: 7rem;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1440px) {
   html {
-    font-size: 25%;
+    font-size: 26%;
   }
   .profile .profile-card {
     margin: 0;
@@ -401,6 +394,13 @@ body {
   }
   .clients {
     font-size: 1rem;
+  }
+  .hobbies {
+    padding: 8rem 5rem;
+    justify-content: start;
+  }
+  .hobbies .heading {
+    flex-basis: 7rem;
   }
   .footer {
     padding: 2rem;
