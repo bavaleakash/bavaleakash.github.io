@@ -357,7 +357,7 @@ body {
   max-width: 4rem;
 }
 
-@media screen and (max-width: 1300px) {
+@media (max-width: 34em) {
   html {
     font-size: 15%;
   }
@@ -368,36 +368,5 @@ body {
   .experience .items .item .organization,
 .education .items .item .organization {
     flex: 0 1 30rem;
-  }
-}
-@media screen and (max-width: 1235px) {
-  html {
-    font-size: 50.5%;
-  }
-}
-@media screen and (max-width: 1000px) {
-  html {
-    font-size: 45.5%;
-  }
-}
-@media screen and (max-width: 700px) {
-  html {
-    font-size: 45.5%;
-  }
-  .experience,
-.education {
-    margin: 5rem 2rem;
-  }
-  .hobbies {
-    padding: 8rem 5rem;
-    justify-content: start;
-  }
-  .hobbies .heading {
-    flex-basis: 7rem;
-  }
-}
-@media screen and (max-width: 1300px) {
-  html {
-    font-size: 20%;
   }
 }
